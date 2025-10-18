@@ -39,6 +39,26 @@ img {
   color: #004c99; 
 }
 
+nav li a {
+  position: relative;
+  overflow: hidden;
+}
+
+nav li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #ffcc00;
+  transition: width 0.3s ease-in-out;
+}
+
+nav li a:hover::after {
+  width: 100%;
+}
+
 button, a, .food-card img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1329,5 +1349,6 @@ footer .socials-mobile {
     color: #000;
   }
 }
+
 
 
