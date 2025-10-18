@@ -10,22 +10,23 @@
     <title>Timplang Kapampangan</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
 </head>
+
 <body>
     <div id="container">
         <header>
-            <a href="foods.html">
+            <a href="index.html">
                 <img src="logo.png" alt="Timplang Kapampangan" />
             </a>
         </header>
 
-         <nav>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="foods.html">Foods</a></li>
@@ -34,177 +35,208 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-
-                <div id="hero" class ="tablet">
-                    <img src="hero.png" alt="sisig" />
-                </div>
-
-                <div id="hero" class ="desktop">
-                    <img src="hero.png" alt="sisig" />
-                </div>
+               
+        <audio id="bg-music" autoplay loop>
+            <source src="bgmusic.mp3" type="audio/mpeg">
+        </audio>
                 
         <main>
-            <section class="mobile-foods">
-                <h2><img src="foodsx.png" alt="Food Icon" class="icon"/> Kapampangan Food</h2>
-                <p class="intro">
-                    The Kapampangan Food section introduces iconic dishes that have shaped Pampanga’s identity as the Culinary Capital of the Philippines.
-                    Each dish carries not only flavor but also a story of tradition, culture, and history.
+            <section class="mobile-contact">
+                <h2><img src="contact.png" alt="Contact Icon" class="icon"/> CONTACT US</h2>
+                <p>
+                    The Contact Us section serves as a direct line between the website and its visitors. 
+                    It allows users to ask questions, share feedback, or connect through social platforms. 
+                    This ensures that the website is not only informative but also interactive and community-driven.
                 </p>
 
-                <div class="food-card">
-                    <img src="sisig.jpg" alt="Sisig" class="food-image" />
-                    <h3>SISIG</h3>
-                    <p>
-                        <strong>Sisig</strong> traces its roots back to the 18th century, when it was originally a Kapampangan salad made with green papaya, vinegar, and salt. 
-                        Later, during the American occupation in the 20th century, locals began using pig parts discarded from U.S. military bases in Clark, Pampanga. 
-                        This resourcefulness transformed sisig into the sizzling pork dish we know today. 
-                        Its history reflects Kapampangan creativity and resilience, turning humble ingredients into a world-famous delicacy.
-                    </p>
-                </div>
+                <img src="home_food.jpg" alt="Food" class="food-img" />
 
-                <div class="food-card">
-                    <img src="tocino.jpg" alt="Tocino" class="food-image" />
-                    <h3>TOCINO</h3>
-                    <p>
-                        <strong>Tocino</strong> originated from Spanish colonial times when meat preservation techniques such as curing were introduced. 
-                        The name comes from the Spanish word <em>tocino</em>, meaning cured pork. 
-                        Kapampangans adapted the recipe with their own sweet marinade, making it one of the most popular Filipino breakfast dishes. 
-                        Its history shows the fusion of Spanish culinary techniques with Kapampangan flavor preferences.
-                    </p>
-                </div>
+                <h3>Stay Connected:</h3>
+                <p>
+                    Visitors can use the built-in contact form for questions, comments, or suggestions about Kapampangan food and culture.
+                </p>
 
-                <div class="food-card">
-                    <img src="kare-kare.jpg" alt="Kare-Kare" class="food-image" />
-                    <h3>KARE-KARE</h3>
-                    <p>
-                        <strong>Kare-Kare</strong> has Spanish and indigenous influences. 
-                        Some historians believe it originated from the Moro (Muslim) settlers in Manila who cooked stews with ground peanuts, 
-                        while others trace it to the Kapampangans who perfected the dish into a creamy peanut-based stew. 
-                        Traditionally served during fiestas and family gatherings, Kare-Kare is deeply tied to Filipino hospitality and Pampanga’s culinary reputation.
-                    </p>
-                </div>
+                <h3>Why It Matters:</h3>
+                <p>
+                    This section ensures the website is not just a source of information but also a platform for connection, interaction, and building a community around Pampanga’s rich culinary heritage.
+                </p>
 
-                <div class="food-card">
-                    <img src="bringhe.jpg" alt="Bringhe" class="food-image" />
-                    <h3>BRINGHE</h3>
+                <h3>Social Media:</h3>
+                <p class="social-media">
+                    Facebook: <a href="#" target="_blank">@TimplangKapampangan</a><br>
+                    Instagram: <a href="#" target="_blank">@TKapampangan</a><br>
+                    Email Address: <a href="mailto:Timplangkapampangan@gmail.com">Timplangkapampangan@gmail.com</a>
+                </p>
+
+                <div class="form-container">
+                    <h3>Share Your Experience:</h3>
                     <p>
-                        <strong>Bringhe</strong> is Pampanga’s version of paella, introduced during the Spanish colonial period. 
-                        While Spanish paella uses saffron, Bringhe uses turmeric and coconut milk, reflecting local adaptation of foreign influences. 
-                        It became a celebratory dish, often cooked in large portions for fiestas, weddings, and religious events, symbolizing abundance and unity.
+                        A space where visitors can share their feedback, reviews, or personal food experiences related to Kapampangan cuisine.
                     </p>
+
+                    <form>
+                        <label>FIRST NAME:</label>
+                        <input type="text" />
+                        <label>LAST NAME:</label>
+                        <input type="text" />
+                        <label>EMAIL:</label>
+                        <input type="email" />
+                        <label>HOW’S YOUR FOOD?</label>
+                        <textarea placeholder="Share your experience..."></textarea>
+                        <label>RATE THIS PAGE:</label>
+                        <select>
+                            <option>Very Helpful</option>
+                            <option>Helpful</option>
+                            <option>Average</option>
+                            <option>Needs Improvement</option>
+                        </select>
+                        <button type="submit">SUBMIT</button>
+                    </form>
                 </div>
             </section>
 
-            <section class="tablet">
-                <h2><img src="foodsx.png" alt="Food Icon" class="icon"/> Kapampangan Food</h2>
-                <p class="intro">
-                    The Kapampangan Food section introduces iconic dishes that have shaped Pampanga’s identity as the Culinary Capital of the Philippines.
-                    Each dish carries not only flavor but also a story of tradition, culture, and history.
-                </p>
+            <section class="tablet-contact">
+                <div class="intro-section">
+                <h2><img src="contact.png" alt="Contact Icon" class="icon"/> CONTACT US</h2>
+                    <p>
+                        The Contact Us section serves as a direct line between the website and its visitors. 
+                        It allows users to ask questions, share feedback, or connect through social platforms. 
+                        This ensures that the website is not only informative but also interactive and community-driven.
+                    </p>
+                </div>
 
-                <table class="food-table">
-                    <tr>
-                        <td>
-                            <img src="sisig.jpg" alt="Sisig" class="food-image" />
-                            <h3>SISIG</h3>
-                            <p>
-                                <strong>Sisig</strong> traces its roots back to the 18th century, when it was originally a Kapampangan salad made with green papaya, vinegar, and salt. 
-                                Later, during the American occupation in the 20th century, locals began using pig parts discarded from U.S. military bases in Clark, Pampanga. 
-                                This resourcefulness transformed sisig into the sizzling pork dish we know today. 
-                                Its history reflects Kapampangan creativity and resilience, turning humble ingredients into a world-famous delicacy.
-                            </p>
-                        </td>
+                <div class="contact-content">
+                    <div class="contact-image">
+                        <img src="home_food.jpg" alt="Food" />
+                    </div>
 
-                        <td>
-                            <img src="tocino.jpg" alt="Tocino" class="food-image" />
-                            <h3>TOCINO</h3>
-                            <p>
-                                <strong>Tocino</strong> originated from Spanish colonial times when meat preservation techniques such as curing were introduced. 
-                                The name comes from the Spanish word <em>tocino</em>, meaning cured pork. 
-                                Kapampangans adapted the recipe with their own sweet marinade, making it one of the most popular Filipino breakfast dishes. 
-                                Its history shows the fusion of Spanish culinary techniques with Kapampangan flavor preferences.
-                            </p>
-                        </td>
-                    </tr>
+                    <div class="contact-info">
+                        <h3>Stay Connected:</h3>
+                        <p>
+                            Visitors can use the built-in contact form for questions, comments, or suggestions about Kapampangan food and culture.
+                        </p>
 
-                    <tr>
-                        <td>
-                            <img src="kare-kare.jpg" alt="Kare-Kare" class="food-image" />
-                            <h3>KARE-KARE</h3>
-                            <p>
-                                <strong>Kare-Kare</strong> has Spanish and indigenous influences. 
-                                Some historians believe it originated from the Moro (Muslim) settlers in Manila who cooked stews with ground peanuts, 
-                                while others trace it to the Kapampangans who perfected the dish into a creamy peanut-based stew. 
-                                Traditionally served during fiestas and family gatherings, Kare-Kare is deeply tied to Filipino hospitality and Pampanga’s culinary reputation.
-                            </p>
-                        </td>
+                        <h3>Why It Matters:</h3>
+                        <p>
+                            This section ensures the website is not just a source of information but also a platform for connection, interaction, 
+                            and building a community around Pampanga’s rich culinary heritage.
+                        </p>
 
-                        <td>
-                            <img src="bringhe.jpg" alt="Bringhe" class="food-image" />
-                            <h3>BRINGHE</h3>
-                            <p>
-                                <strong>Bringhe</strong> is Pampanga’s version of paella, introduced during the Spanish colonial period. 
-                                While Spanish paella uses saffron, Bringhe uses turmeric and coconut milk, reflecting local adaptation of foreign influences. 
-                                It became a celebratory dish, often cooked in large portions for fiestas, weddings, and religious events, symbolizing abundance and unity.
-                            </p>
-                        </td>
-                    </tr>
-                </table>
+                        <h3>Social Media:</h3>
+                        <p class="social-media">
+                            Facebook: <a href="#" target="_blank">@TimplangKapampangan</a><br>
+                            Instagram: <a href="#" target="_blank">@TKapampangan</a><br>
+                            Email Address: <a href="mailto:Timplangkapampangan@gmail.com">Timplangkapampangan@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <h3>Share Your Experience:</h3>
+                    <p>
+                        A space where visitors can share their feedback, reviews, or personal food experiences related to Kapampangan cuisine.
+                    </p>
+
+                    <form>
+                        <div class="form-grid">
+                            <div>
+                                <label>FIRST NAME:</label>
+                                <input type="text" />
+                                <label>LAST NAME:</label>
+                                <input type="text" />
+                                <label>EMAIL:</label>
+                                <input type="email" />
+                            </div>
+
+                            <div>
+                                <label>HOW’S YOUR FOOD?</label>
+                                <textarea placeholder="Share your experience..."></textarea>
+                                <label>RATE THIS PAGE:</label>
+                                <select>
+                                    <option>Very Helpful</option>
+                                    <option>Helpful</option>
+                                    <option>Average</option>
+                                    <option>Needs Improvement</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn">SUBMIT</button>
+                    </form>
+                </div>
             </section>
 
-            <section class="desktop">
-                <h2><img src="foodsx.png" alt="Food Icon" class="icon"/> Kapampangan Food</h2>
-                <p class="intro">
-                    The Kapampangan Food section introduces iconic dishes that have shaped Pampanga’s identity as the Culinary Capital of the Philippines.
-                    Each dish carries not only flavor but also a story of tradition, culture, and history.
+            <section class="desktop-contact">
+                <h2><img src="contact.png" alt="Contact Icon" class="icon"/> CONTACT US</h2>
+                <p>
+                    The Contact Us section serves as a direct line between the website and its visitors.
+                    It allows users to ask questions, share feedback, or connect through social platforms.
+                    This ensures that the website is not only informative but also interactive and community-driven.
                 </p>
 
-                <table class="food-table">
-                    <tr>
-                        <td>
-                            <img src="sisig.jpg" alt="Sisig" class="food-image" />
-                            <h3>SISIG</h3>
-                            <p>
-                                <strong>Sisig</strong> traces its roots back to the 18th century, when it was originally a Kapampangan salad made with green papaya, vinegar, and salt. 
-                                Later, during the American occupation in the 20th century, locals began using pig parts discarded from U.S. military bases in Clark, Pampanga. 
-                                This resourcefulness transformed sisig into the sizzling pork dish we know today. 
-                                Its history reflects Kapampangan creativity and resilience, turning humble ingredients into a world-famous delicacy.
-                            </p>
-                        </td>
+                <div class="contact-grid">
+                    <div class="contact-image">
+                        <img src="home_food.jpg" alt="Kapampangan food" />
+                    </div>
 
-                        <td>
-                            <img src="tocino.jpg" alt="Tocino" class="food-image" />
-                            <h3>TOCINO</h3>
-                            <p>
-                                <strong>Tocino</strong> originated from Spanish colonial times when meat preservation techniques such as curing were introduced. 
-                                The name comes from the Spanish word <em>tocino</em>, meaning cured pork. 
-                                Kapampangans adapted the recipe with their own sweet marinade, making it one of the most popular Filipino breakfast dishes. 
-                                Its history shows the fusion of Spanish culinary techniques with Kapampangan flavor preferences.
-                            </p>
-                        </td>
+                    <div class="contact-info">
+                        <h3>Stay Connected:</h3>
+                        <p>
+                            Visitors can use the built-in contact form for questions, comments, or suggestions
+                            about Kapampangan food and culture.
+                        </p>
 
-                        <td>
-                            <img src="kare-kare.jpg" alt="Kare-Kare" class="food-image" />
-                            <h3>KARE-KARE</h3>
-                            <p>
-                                <strong>Kare-Kare</strong> has Spanish and indigenous influences. 
-                                Some historians believe it originated from the Moro (Muslim) settlers in Manila who cooked stews with ground peanuts, 
-                                while others trace it to the Kapampangans who perfected the dish into a creamy peanut-based stew. 
-                                Traditionally served during fiestas and family gatherings, Kare-Kare is deeply tied to Filipino hospitality and Pampanga’s culinary reputation.
-                            </p>
-                        </td>
+                        <h3>Why It Matters:</h3>
+                        <p>
+                            This section ensures the website is not just a source of information but also a platform
+                            for connection, interaction, and building a community around Pampanga’s rich culinary heritage.
+                        </p>
 
-                        <td>
-                            <img src="bringhe.jpg" alt="Bringhe" class="food-image" />
-                            <h3>BRINGHE</h3>
-                            <p>
-                                <strong>Bringhe</strong> is Pampanga’s version of paella, introduced during the Spanish colonial period. 
-                                While Spanish paella uses saffron, Bringhe uses turmeric and coconut milk, reflecting local adaptation of foreign influences. 
-                                It became a celebratory dish, often cooked in large portions for fiestas, weddings, and religious events, symbolizing abundance and unity.
-                            </p>
-                        </td>
-                    </tr>
-                </table>
+                        <h3>Social Media:</h3>
+                        <p class="social-media">
+                            Facebook: <a href="#" target="_blank">@TimplangKapampangan</a><br>
+                            Instagram: <a href="#" target="_blank">@TKapampangan</a><br>
+                            Email: <a href="mailto:Timplangkapampangan@gmail.com">Timplangkapampangan@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Share Your Experience:</h3>
+                        <p>
+                            A space where visitors can share their feedback, reviews, or personal food experiences related to Kapampangan cuisine.
+                        </p>
+
+                        <form>
+                            <div class="form-grid">
+                                <div>
+                                    <label>FIRST NAME:</label>
+                                    <input type="text" />
+                                </div>
+                                <div>
+                                    <label>RATE THIS PAGE:</label>
+                                    <select>
+                                        <option>Very Helpful</option>
+                                        <option>Helpful</option>
+                                        <option>Average</option>
+                                        <option>Needs Improvement</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>LAST NAME:</label>
+                                    <input type="text" />
+                                </div>
+                                <div>
+                                    <label>HOW’S YOUR FOOD?</label>
+                                    <textarea placeholder="Share your experience..."></textarea>
+                                </div>
+                                <div>
+                                    <label>EMAIL:</label>
+                                    <input type="email" />
+                                </div>
+                            </div>
+                            <button type="submit">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -239,7 +271,25 @@
         </div>
     </footer>
     </div>
+
+    <script>
+        const music = document.getElementById('bg-music');
+        const toggle = document.getElementById('music-toggle');
+
+        document.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+            }
+        }, { once: true });
+
+        toggle.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        });
+    </script>
+
 </body>
 </html>
-
-
