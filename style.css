@@ -39,6 +39,23 @@ img {
   color: #004c99; 
 }
 
+button, a, .food-card img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover, a:hover, .food-card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.food-card, .contact-form {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card:hover, .food-table td:hover, .contact-form:hover {
+  transform: translateY(-4px);
+}
+
 /* =============================================================================================================================== */
 /* MOBILE VIEWPORT STYLES */
 
@@ -1310,3 +1327,4 @@ footer .socials-mobile {
     color: #000;
   }
 }
+
