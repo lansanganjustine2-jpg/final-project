@@ -1344,6 +1344,101 @@ footer .socials-mobile {
   table {
     width: 80%;
   }
+
+  @media screen and (min-width: 1921px) {
+  #container {
+    width: 90%; 
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  header {
+    width: 30%;      
+    float: left;
+    padding-bottom: 0;
+  }
+
+  nav {
+    float: right;
+    width: 65%;     
+    margin: 5em 2em 0 0;
+  }
+
+  nav li a {
+    font-size: 1.2em; 
+    padding: 0.75em 1.5em;
+  }
+
+  nav li a:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+
+  main {
+    clear: left;
+  }
+
+  .food-card {
+    padding: 1.5rem;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .food-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  }
+
+  #gallery-desktop .photo-grid {
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+  }
+
+  #gallery-desktop .photo-grid img {
+    height: 250px; 
+  }
+
+  .desktop-contact .contact-grid {
+    grid-template-columns: 1.2fr 1.2fr 1.5fr; 
+    gap: 35px;
+    padding-top: 30px;
+  }
+
+  .desktop-contact .contact-form {
+    padding: 30px;
+  }
+
+  .desktop-contact .contact-form button {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 20px 50px;
+    font-size: 1.1em;
+  }
+
+  footer .socials-desktop img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  footer .socials-desktop img:hover {
+    transform: scale(1.2);
+    opacity: 0.85;
+  }
+
+  .fade-in-lg {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .fade-in-lg.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* =============================================================================================================================== */
@@ -1356,6 +1451,7 @@ footer .socials-mobile {
     color: #000;
   }
 }
+
 
 
 
