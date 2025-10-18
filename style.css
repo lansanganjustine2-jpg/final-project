@@ -24,6 +24,10 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -1349,6 +1353,7 @@ footer .socials-mobile {
     color: #000;
   }
 }
+
 
 
 
