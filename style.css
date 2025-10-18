@@ -1101,12 +1101,11 @@ footer .socials-mobile {
   }
 
   #gallery-desktop h2 {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 10px;
+    font-size: 1.8em;
+    display: flex;
+    margin-bottom: 15px;
     padding-left: 25px;
-    text-align: center;
+    align-items: center;
   }
 
   #gallery-desktop .gallery-table {
@@ -1150,6 +1149,7 @@ footer .socials-mobile {
 
   #gallery-desktop .icon {
     width: 30px;
+    height: auto;
     margin-right: 10px;
   }
 
