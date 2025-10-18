@@ -16,18 +16,18 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
-</head>   
+    
 <body>
     <div id="container">
         <header>
-            <a href="index.html">
+            <a href="home.html">
                 <img src="logo.png" alt="Timplang Kapampangan" />
             </a>
         </header>
 
          <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="foods.html">Foods</a></li>
                 <li><a href="tutorials.html">Tutorials</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -42,6 +42,10 @@
                 <div id="hero" class ="desktop">
                     <img src="hero.png" alt="sisig" />
                 </div>
+
+        <audio id="bg-music" autoplay loop>
+            <source src="bgmusic.mp3" type="audio/mpeg">
+        </audio>
                 
         <main>
             <section class="mobile">
@@ -237,7 +241,25 @@
         </div>
     </footer>
     </div>
+
+    <script>
+        const music = document.getElementById('bg-music');
+        const toggle = document.getElementById('music-toggle');
+
+        document.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+            }
+        }, { once: true });
+
+        toggle.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        });
+    </script>
+
 </body>
 </html>
-
-
