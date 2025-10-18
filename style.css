@@ -49,11 +49,13 @@ button:hover, a:hover, .food-card img:hover {
 }
 
 .food-card, .contact-form {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .food-card:hover, .food-table td:hover, .contact-form:hover {
   transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* =============================================================================================================================== */
@@ -1327,4 +1329,5 @@ footer .socials-mobile {
     color: #000;
   }
 }
+
 
