@@ -1037,11 +1037,6 @@ footer .socials-mobile {
     text-align: justify;
   }
 
-  .desktop h2{
-    padding-left: 25px;
-
-  }
-
   .desktop-contact  h2 {
     display: flex;
     align-items: center;    
@@ -1448,6 +1443,7 @@ footer .socials-mobile {
     color: #000;
   }
 }
+
 
 
 
