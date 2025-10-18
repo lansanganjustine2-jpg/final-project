@@ -34,15 +34,10 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-
-                <div id="hero" class ="tablet">
-                    <img src="hero.png" alt="sisig" />
-                </div>
-
-                <div id="hero" class ="desktop">
-                    <img src="hero.png" alt="sisig" />
-                </div>
-
+          <audio id="bg-music" autoplay loop>
+            <source src="bgmusic.mp3" type="audio/mpeg">
+          </audio>
+    
                 <section id="gallery">
                     <h2><img src="gallery.png" alt="Gallery Icon" class="icon"/> GALLERY</h2>
                     <p>The Gallery section showcases the visual richness of Kapampangan cuisine and Pampanga's culinary heritage. It allows visitors to explore the colors, textures, and artistry of food and culture through images.</p>
@@ -224,7 +219,25 @@
         </div>
     </footer>
     </div>
+        <script>
+            const music = document.getElementById('bg-music');
+            const toggle = document.getElementById('music-toggle');
+    
+            document.addEventListener('click', () => {
+                if (music.paused) {
+                    music.play();
+                }
+            }, { once: true });
+    
+            toggle.addEventListener('click', () => {
+                if (music.paused) {
+                    music.play();
+                } else {
+                    music.pause();
+                }
+            });
+        </script>
 </body>
-
 </html>
+
 
