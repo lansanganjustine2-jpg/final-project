@@ -678,7 +678,7 @@ footer .socials-mobile {
 /* =============================================================================================================================== */
 /* TABLET VIEWPORT STYLES */
 
-@media screen and (min-width: 630px), print {
+@media screen and (min-width: 750px), print {
   .tablet {
     display: block;
   }
@@ -1187,7 +1187,7 @@ footer .socials-mobile {
 /* =============================================================================================================================== */
 /* DESKTOP VIEWPORT STYLES */
 
-@media screen and (min-width: 1015px) {
+@media screen and (min-width: 1480px) {
 
   .tablet,
   .mobile {
@@ -1704,3 +1704,4 @@ footer .socials-mobile {
     color: #000;
   }
 }
+
