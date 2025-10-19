@@ -24,11 +24,25 @@
             <a href="index.html">
                 <img src="logo.png" alt="Timplang Kapampangan">
             </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                &#9776;
+            </button>
         </header>
+
+        <nav id="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="foods.html">Foods</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="foods.html">Foods</a></li>
                 <li><a href="tutorials.html">Tutorials</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -263,5 +277,15 @@
             });
         }
     </script>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+        });
+    </script>
+
 </body>
 </html>
