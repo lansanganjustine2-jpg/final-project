@@ -1,33 +1,34 @@
-    <!--
-      Full Name: Lansangan, Justine O.
-      Section: WD-202
-      Date: September 30, 2025
-    -->
+  <!--
+    Full Name: Lansangan, Justine O.
+    Section: WD-202
+    Date: September 30, 2025
+-->
 
 <!DOCTYPE html>
 <html lang="en">
 <head> 
-    <title>Timplang Kapampangan</title>
+    <title>Timplang Kapampangan - Foods</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+</head>
 
 <body>
     <div id="container">
         <header>
-            <a href="foods.html">
-                <img src="logo.png" alt="Timplang Kapampangan" />
+            <a href="home.html">
+                <img src="logo.png" alt="Timplang Kapampangan">
             </a>
         </header>
 
-         <nav>
+        <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="foods.html">Foods</a></li>
                 <li><a href="tutorials.html">Tutorials</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -35,9 +36,9 @@
             </ul>
         </nav>
 
-                <audio id="bg-music" autoplay loop>
-                    <source src="bgmusic.mp3" type="audio/mpeg">
-                </audio>
+        <audio id="bg-music" autoplay loop>
+            <source src="bgmusic.mp3" type="audio/mpeg">
+        </audio>
                 
         <main>
             <section class="mobile-foods">
@@ -148,7 +149,7 @@
                 </table>
             </section>
 
-            <section class="desktop">
+            <section class="desktop-food">
                 <h2><img src="foodsx.png" alt="Food Icon" class="icon"/> Kapampangan Food</h2>
                 <p class="intro">
                     The Kapampangan Food section introduces iconic dishes that have shaped Pampanga’s identity as the Culinary Capital of the Philippines.
@@ -206,33 +207,34 @@
 
     <footer>
         <div class="socials-mobile">
-            <a href="https://www.facebook.com/just.lansangan" target="_blank">
+            <a href="https://www.facebook.com/just.lansangan" target="_blank" aria-label="Facebook">
                 <img src="fb.png" alt="Facebook">
             </a>
-            <a href="https://www.instagram.com/justti.l" target="_blank">
+            <a href="https://www.instagram.com/justti.l" target="_blank" aria-label="Instagram">
+                <img src="ig.png" alt="Instagram">
+            </a>
+        </div>
+
+        <div class="socials-tablet">
+            <a href="https://www.facebook.com/just.lansangan" target="_blank" aria-label="Facebook">
+                <img src="fb.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/justti.l" target="_blank" aria-label="Instagram">
+                <img src="ig.png" alt="Instagram">
+            </a>
+        </div>
+
+        <div class="socials-desktop">
+            <a href="https://www.facebook.com/just.lansangan" target="_blank" aria-label="Facebook">
+                <img src="fb.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/justti.l" target="_blank" aria-label="Instagram">
                 <img src="ig.png" alt="Instagram">
             </a>
         </div>
 
         <p>&copy; 2025 TIMPLANG KAPAMPANGAN - WEBSITE BY JUSTINE LANSANGAN</p>
 
-        <div class="socials-tablet">
-            <a href="https://www.facebook.com/just.lansangan" target="_blank">
-                <img src="fb.png" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com/justti.l" target="_blank">
-                <img src="ig.png" alt="Instagram">
-            </a>
-        </div>
-
-        <div class="socials-desktop">
-            <a href="https://www.facebook.com/just.lansangan" target="_blank">
-                <img src="fb.png" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com/justti.l" target="_blank">
-                <img src="ig.png" alt="Instagram">
-            </a>
-        </div>
     </footer>
     </div>
 
@@ -246,15 +248,15 @@
             }
         }, { once: true });
 
-        toggle.addEventListener('click', () => {
-            if (music.paused) {
-                music.play();
-            } else {
-                music.pause();
-            }
-        });
+        if (toggle) {
+            toggle.addEventListener('click', () => {
+                if (music.paused) {
+                    music.play();
+                } else {
+                    music.pause();
+                }
+            });
+        }
     </script>
-
 </body>
 </html>
-
