@@ -150,6 +150,9 @@ header {
   top: 0;
   background-color: #F5C542;
   height: 190px;
+  width: 100%;
+  position: fixed;
+  z-index: 2000;
 }
 
 header img {
@@ -157,6 +160,17 @@ header img {
   margin: 0 auto;
   padding: var(--spacing-sm) var(--spacing-md);
   padding-top: var(--spacing-xs);
+}
+
+main .mobile{
+  margin-top: 200px;
+}
+
+main .gallery,
+main .mobile-contact,
+main .mobile-foods,
+main #gallery {
+  margin-top: 150px;
 }
 
 nav {
@@ -1704,4 +1718,5 @@ footer .socials-mobile {
     color: #000;
   }
 }
+
 
