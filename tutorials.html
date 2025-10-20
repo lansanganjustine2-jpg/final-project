@@ -31,6 +31,7 @@
         </header>
 
         <nav id="mobile-menu">
+            <button id="close-menu" aria-label="Close menu">&times;</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="foods.html">Foods</a></li>
@@ -646,13 +647,18 @@
 
     <script>
         const menuToggle = document.getElementById('menu-toggle');
+        const closeMenu = document.getElementById('close-menu');
         const mobileMenu = document.getElementById('mobile-menu');
 
         menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('active');
+        mobileMenu.classList.toggle('show');
+        });
+
+        closeMenu.addEventListener('click', () => {
+        mobileMenu.classList.remove('show');
         });
     </script>
-
 </body>
 </html>
+
 
