@@ -240,26 +240,6 @@
     </div>
 
     <script>
-        const music = document.getElementById('bg-music');
-        const toggle = document.getElementById('music-toggle');
-
-        document.addEventListener('click', () => {
-            if (music.paused) {
-                music.play();
-            }
-        }, { once: true });
-
-        if (toggle) {
-            toggle.addEventListener('click', () => {
-                if (music.paused) {
-                    music.play();
-
-                }
-            });
-        }
-    </script>
-
-    <script>
         const menuToggle = document.getElementById('menu-toggle');
         const closeMenu = document.getElementById('close-menu');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -274,5 +254,6 @@
     </script>
 </body>
 </html>
+
 
 
