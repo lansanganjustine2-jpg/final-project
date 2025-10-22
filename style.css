@@ -1484,9 +1484,9 @@ footer .socials-mobile {
   .section h2 {
     font-size: 1.4em;
     font-weight: bold;
+    text-align: left;
     color: #000;
     margin-bottom: var(--spacing-sm);
-    padding-left: var(--spacing-lg);
   }
 
   .section p {
@@ -1845,6 +1845,7 @@ footer .socials-mobile {
     color: #000;
   }
 }
+
 
 
 
