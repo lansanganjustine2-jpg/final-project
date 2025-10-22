@@ -656,29 +656,129 @@ main {
   resize: vertical;
   min-height: 80px;
 }
-
-.mobile-contact button {
-  margin-top: var(--spacing-md);
-  margin-left: auto;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: var(--spacing-sm) var(--spacing-lg);
-  cursor: pointer;
-  width: fit-content;
-  border-radius: var(--border-radius);
-  font-weight: bold;
-  font-size: 1rem;
-  box-shadow: var(--shadow-sm);
-  transition: all 0.3s ease;
+/* Form Styling for Fieldset and Legend */
+fieldset {
+    border: 2px solid #AD8108;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    background-color: rgba(250, 242, 236, 0.5);
+    box-shadow: var(--shadow-sm);
 }
 
-.mobile-contact button:hover {
-  background-color: #AD8108;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+legend {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #2e1e00;
+    padding: 0 var(--spacing-sm);
+    background: linear-gradient(135deg, #FCEBBE, #FAF2EC);
+    border: 2px solid #AD8108;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
 }
 
+/* Required field styling */
+.required {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.required-note {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: var(--spacing-sm);
+    text-align: right;
+    font-style: italic;
+}
+
+/* Form input styling */
+form label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+    color: #2e1e00;
+    font-size: 0.95rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 2px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 0.95rem;
+    font-family: "Roboto Slab", serif;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    margin-bottom: var(--spacing-md);
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #AD8108;
+    box-shadow: 0 0 0 3px rgba(173, 129, 8, 0.1);
+    background-color: #fffdf5;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: "Roboto Slab", serif;
+}
+
+/* Form buttons styling */
+.form-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+    justify-content: flex-end;
+}
+
+form button[type="submit"] {
+    background-color: #2e1e00;
+    color: white;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+form button[type="submit"]:hover {
+    background-color: #AD8108;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+form button[type="reset"] {
+    background-color: #95a5a6;
+    color: white;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+form button[type="reset"]:hover {
+    background-color: #7f8c8d;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Footer styling */
 footer {
   background-color: #AD8108;
   text-align: center;
@@ -1178,29 +1278,7 @@ footer .socials-mobile {
     border-color: #AD8108;
     box-shadow: 0 0 0 3px rgba(173, 129, 8, 0.1);
   }
-
-  .tablet-contact button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: var(--border-radius);
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1rem;
-    padding: var(--spacing-sm) var(--spacing-lg);
-    width: fit-content;
-    margin-left: auto; 
-    display: block;
-    box-shadow: var(--shadow-sm);
-    transition: all 0.3s ease;
-  }
-
-  .tablet-contact button:hover {
-    background-color: #AD8108;
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-  }
-
+  
   footer .socials-tablet {
     display: flex;
     justify-content: center; 
@@ -1686,27 +1764,6 @@ footer .socials-mobile {
     min-height: 60px;
   }
 
-  .desktop-contact .contact-form button {
-    margin-top: var(--spacing-md);
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: var(--spacing-sm) var(--spacing-lg);
-    font-size: 1rem;
-    cursor: pointer;
-    float: right;
-    border-radius: var(--border-radius);
-    font-weight: bold;
-    box-shadow: var(--shadow-sm);
-    transition: all 0.3s ease;
-  }
-
-  .desktop-contact .contact-form button:hover {
-    background-color: #AD8108;
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-  }
-
   footer {
     background-color: #AD8108;
     color: #000;
@@ -1788,6 +1845,7 @@ footer .socials-mobile {
     color: #000;
   }
 }
+
 
 
 
