@@ -1719,6 +1719,18 @@ footer .socials-mobile {
   table {
     width: 80%;
   }
+
+  #hero.desktop {
+        width: 100%;
+        height: auto; 
+        overflow: hidden;
+    }
+    
+    #hero.desktop img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 }
 
 /* =============================================================================================================================== */
@@ -1731,6 +1743,7 @@ footer .socials-mobile {
     color: #000;
   }
 }
+
 
 
 
